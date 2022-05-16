@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Lora:ital@1&family=Playfair+Display&family=Roboto+Slab:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Lora:ital@1&family=Playfair+Display&family=Roboto+Flex:opsz,wght@8..144,200&family=Roboto+Slab:wght@300;400&display=swap');
+
 
 *{
     padding: 0;
@@ -166,11 +168,13 @@ nav {
 
 
 /* productos*/
-
+/*
 .productos {
     display: flex;
     align-items: center;
 }
+
+
 
 .descriProduc{
     display: flex;
@@ -187,6 +191,66 @@ nav {
     display: flex;
     flex-direction: column;
     
+}*/
+
+.descriProduc{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "tortas1 tortas2 tortas3 tortas4" 
+    "tortas5 tortas6 tortas7 tortas8"
+    "tortas9 tortas10 tortas11 tortas12";
+}
+
+.tortas1{
+    grid-area: tortas1;
+}
+.tortas2{
+    grid-area: tortas2;
+}
+.tortas3{
+    grid-area: tortas3;
+}
+.tortas4{
+    grid-area: tortas4;
+}
+.tortas5{
+    grid-area: tortas5;
+}
+.tortas6{
+    grid-area: tortas6;
+}
+.tortas7{
+    grid-area: tortas7;
+}
+.tortas8{
+    grid-area: tortas8;
+}
+.tortas9{
+    grid-area: tortas9;
+}
+.tortas10{
+    grid-area: tortas10;
+}
+.tortas11{
+    grid-area: tortas11;
+}
+.tortas12{
+    grid-area: tortas12;
+}
+
+
+
+
+
+
+.h2tortas{
+   
+    font-size: 1rem;
+    font-family: 'Roboto Slab', serif;
+    
+
 }
 
 /* shop */
@@ -261,100 +325,6 @@ nav {
         height: 100px;
     }
 }
-
-
-/*
-.bodyShop{
-    background-color: blanchedalmond;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.headerShop{
-    font-size: large;
-    display: grid;
-    justify-content: center;
-}
-
-.navShop ul li{
-    list-style: none;
-    text-transform: uppercase;
-}
-
-.navShop ul li a {
-    text-decoration: none;
-}
-
-.categorias, .opciones{
-    border: 2px solid white;
-}
-
-.categorias{
-    font-size: large;
-}
-.shop1{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-.opciones{
-    font-size: large;
-}
-
-.prod{
-  border: 5px solid rgb(99, 89, 89);
-  width: 200px;
-  height: 200px;
-  margin-top: 15px;
-  
-
-}
-
-
-
-.footerShop{
-    text-align: center;
-   
-    margin-bottom: 0;
-    margin-top: 20px;
-    
-}
-
-.shop{
-    grid-area: header;
-}
-.shop1{
-    grid-area: categorias;
-}
-.shop2{
-    grid-area: grilla;
-}
-.footerShop{
-    grid-area: footer;
-}
-   
-.grillaShop{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    height: 1500px;
-    gap: 20px;
-    justify-content: center;
-    align-items: end;
-}
-
-.shop{
-    display: grid;
-    gap: 20px;
-    grid-template-areas: 
-    "header"
-    "categorias"
-    "grilla"
-    "footer";
-}*/
-
-
 
 
 
