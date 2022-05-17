@@ -18,6 +18,11 @@
     
 }
 
+.contactHeader{
+    background-color: rgb(223, 209, 203)
+
+}
+
 h1{
     font-family: 'Lora', serif;
     color: rgb(117, 68, 53);
@@ -82,7 +87,12 @@ nav {
     display: flex;
 }
 
-
+.navbar{
+    height: 150px;
+}
+.navbar1{
+    align-items: center;
+}
 
 #sableeAlmendras {
     display: flex;
@@ -100,6 +110,13 @@ nav {
 
 .videos {
     margin: 1.5rem;
+}
+
+/*contacto*/
+
+.consulta{
+    font-family: 'Playfair Display', serif;
+    color: brown;
 }
 
 /* recetas*/
@@ -168,30 +185,7 @@ nav {
 
 
 /* productos*/
-/*
-.productos {
-    display: flex;
-    align-items: center;
-}
 
-
-
-.descriProduc{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.tortas {
-   display: flex;
-   width: 80%;
-   margin-top: 15px;
-}
-
-.tortas h2 {
-    display: flex;
-    flex-direction: column;
-    
-}*/
 
 .descriProduc{
     display: grid;
