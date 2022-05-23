@@ -32,9 +32,7 @@ h1{
     justify-content: center;
 }
 
-#hProducto {
-    font-size: 300%;
-}
+
 
 h2{
     font-family: 'Playfair Display', serif;
@@ -94,23 +92,13 @@ nav {
     align-items: center;
 }
 
-#sableeAlmendras {
-    display: flex;
-    justify-content: center;
-}
-
-
-.fotos {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;   
-}
-
-
 
 .videos {
     margin: 1.5rem;
 }
+
+
+
 
 /*contacto*/
 
@@ -122,6 +110,96 @@ nav {
 /* recetas*/
 
 #receta{
+    font-size: 150%;
+}
+
+.recipes{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr ;
+    grid-template-areas:
+    "rec"
+    
+    ;
+   gap: 2%;
+}
+.gridRecipes{
+    grid-area: rec;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 1.5%;
+}
+
+
+.animrecet:hover {
+    transform: scale(0.5) ;
+    transition-property: all;
+    transition-duration: 1.5s;
+}
+
+@media (min-width:576px){
+
+    .recipes{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr ;
+        grid-template-areas:
+        " rec rec "
+        ;
+      
+    }
+    .gridRecipes{
+        
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+
+
+}
+@media (min-width:768px){
+    .recipes{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        " rec rec rec "
+        ;
+      
+    }
+    .gridRecipes{
+        
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        
+    }
+    #receta{
+        font-size: 200%;
+    }
+
+}
+
+@media (min-width:992px){
+    .recipes{
+        
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr ;
+        grid-template-areas:
+        " rec rec rec rec"
+        ;
+      
+    }
+    
+    #receta{
+        font-size: 300%;
+    }
+
+
+}
+
+
+/*#receta{
     font-size: 300%;
 }
 
@@ -179,15 +257,21 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
+}*/
 
 
 
 
 /* productos*/
 
+#hProducto {
+    font-size: 300%;
+}
+
+
 
 .descriProduc{
+    grid-area: gal;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -251,6 +335,44 @@ nav {
 
 }
 
+@media (max-width:576px) {
+  
+    .descriProduc{
+       
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr ;
+        grid-template-areas: 
+        "tortas1 " 
+        "tortas2" 
+        "tortas3" 
+        "tortas4"
+        "tortas5 "
+        "tortas6" 
+        "tortas7"
+        "tortas8"
+        "tortas9 "
+        "tortas10" 
+        "tortas11" 
+        "tortas12";
+    }
+
+}
+
+@media (min-width:576px) and( max-width:992px){
+  
+    .descriProduc{
+       
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr ;
+        grid-template-areas: 
+        "tortas1 tortas2 tortas3" 
+        "tortas4 tortas5 tortas6"
+        "tortas7 tortas8 tortas9"
+        "tortas10 tortas11 tortas12" ;
+    }
+
+}
+
 /* shop */
 
 .grillaShop{
@@ -279,7 +401,7 @@ nav {
     gap: 20px;
 }
 
-@media (min-width:600px){
+@media  (min-width:576px){
     .grillaShop{
         display: grid;
         grid-template-columns: 1fr 1fr ;
@@ -302,7 +424,7 @@ nav {
     }
 }
 
-@media (min-width:1000px){
+@media (min-width:768px){
     .grillaShop{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -324,99 +446,24 @@ nav {
     }
 }
 
-
-
-
-/*
-.prod{
-    box-shadow: 0 10px 20px;
-    border-radius: 6px;
-    height: 200px;
-    width: 300px;
-    
-}
-
-.prod1{
-    
-    background-position: center;
-    background-size: cover;
-}
-
-.prod2{
-    background-image: url(../img/keylime.jpg);
-    background-position: center;
-    background-size: cover ;
-
-}
-
-.prod3{
-    background-image: url(../img/rogel.jpg);
-    background-position: center;
-    background-size: cover;
-
-}
-
-.prod4{
-    background-image: url(../img/descarga.jpg);
-    background-position: center;
-    background-size: cover;
-
-}
-
-.prod5{
-    background-image: url(../img/cheesecake.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-.prod6{
-    background-image: url(../img/choco.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-
-@media (min-width:600px){
-    .shop {
+@media (min-width:992px){
+    .grillaShop{
         display: grid;
-        grid-template-columns: 1fr 1fr   ;
-        grid-template-rows: 1fr 1fr  ;
-            
-            
-        grid-template-areas: 
-        "header header "
-        "galeria sidebar"
-        "footers footers" ;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr  1fr 1fr ;
+        grid-template-areas:  
+        "galeria galeria galeria galeria"
+        "footer footer footer footer";
     }
-
-    .prodVentas{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@media (min-width:1000px){
-    .shop{
-    grid-template-columns: 1fr 4fr 1fr  ;   
-    grid-template-rows: 1fr 1fr 1fr;
-    height: 20%; 
-    grid-template-areas: 
-        "header header header "
-        "galeria galeria sidebar "
-        "footers footers footers  " ;
-    }
-    .prodVentas{
-        display: flex;
+    .padre{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
         justify-content: center;
-        align-items: center;
-        }
-
-    .footerShop {
-
-    }    
-
-        
-}*/
+        align-items: center ;
+        gap: 20px;
+    }
+}
 
 
 /*productos*/
