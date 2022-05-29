@@ -1,473 +1,392 @@
-@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Roboto+Slab&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Lora:ital@1&family=Playfair+Display&family=Roboto+Slab:wght@300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Lora:ital@1&family=Playfair+Display&family=Roboto+Flex:opsz,wght@8..144,200&family=Roboto+Slab:wght@300;400&display=swap');
-
-
-*{
-    padding: 0;
-    margin: 0;
-}
-
-/* index*/
-
-.headerTotal{
-    display: flex;
-    background-color: rgb(223, 209, 203);
-    display: flex;
-    
-}
-
-.contactHeader{
-    background-color: rgb(223, 209, 203)
-
-}
-
-h1{
-    font-family: 'Lora', serif;
-    color: rgb(117, 68, 53);
-    font-size: 100px;
-    font-weight: 20% ;
-    display: flex;
-    justify-content: center;
-}
-
-
-
-h2{
-    font-family: 'Playfair Display', serif;
-    color: brown;
-    display: flex;
-    justify-content: center;
-}
- 
-section h3{
-    font-family: 'Playfair Display', serif;
-    color: brown;
-    display: flex;
-    justify-content: center;
-}
-
-body{
-    background-color: rgb(241, 239, 241);
-   
-}
-
-ul li {
-    list-style-type: none;
-    display: flex;
-}
-
-ul {
-    display: flex;
-}
-
-.buscar {
-    
-    position: relative;
-    right: 1rem;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: rgb(43, 34, 34);
-    font-size: 125%;
-    font-family: 'Akshar', sans-serif;
-    margin: 4rem 2rem;
-}
-
-footer {
-    background-color: rgb(223, 209, 203) ;
-    height: 200%;
-}
-
-nav {
-    display: flex;
-}
-
-.navbar{
-    height: 150px;
-}
-.navbar1{
-    align-items: center;
-}
-
-
-.videos {
-    margin: 1.5rem;
-}
-
-
-
-
-/*contacto*/
-
-.consulta{
-    font-family: 'Playfair Display', serif;
-    color: brown;
-}
-
-/* recetas*/
-
-#receta{
-    font-size: 150%;
-}
-
-.recipes{
-    display: grid;
-    grid-template-columns: 1fr ;
-    grid-template-rows: 1fr ;
-    grid-template-areas:
-    "rec"
-    
-    ;
-   gap: 2%;
-}
-.gridRecipes{
-    grid-area: rec;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 1.5%;
-}
-
-
-.animrecet:hover {
-    transform: scale(0.5) ;
-    transition-property: all;
-    transition-duration: 1.5s;
-}
-
-@media (min-width:576px){
-
-    .recipes{
-        display: grid;
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows: 1fr 1fr ;
-        grid-template-areas:
-        " rec rec "
-        ;
-      
-    }
-    .gridRecipes{
-        
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-    
-
-
-}
-@media (min-width:768px){
-    .recipes{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas:
-        " rec rec rec "
-        ;
-      
-    }
-    .gridRecipes{
-        
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        
-    }
-    #receta{
-        font-size: 200%;
-    }
-
-}
-
-@media (min-width:992px){
-    .recipes{
-        
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr ;
-        grid-template-areas:
-        " rec rec rec rec"
-        ;
-      
-    }
-    
-    #receta{
-        font-size: 300%;
-    }
-
-
-}
-
-
-/*#receta{
-    font-size: 300%;
-}
-
-.nuestrasRecetas{
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.recetaAlfajor{
-    border-radius: 0.5em;
-    margin: 4rem ;
-    display: flex;
-     
-}
-#alfajores:hover{
-    
-    transform: scale(4);
-    transition-property: all; 
-    transition-duration: 1s;
-}
-
-#alfajores{
-    border-radius: 40%;
-
-}
-
-#brownies:hover{
-    border-radius: 40%;
-    transform: scale(4);
-    transition-property: all; 
-    transition-duration: 1s;
-}
-#brownies{
-    border-radius: 40%;
-
-}
-
-.recetaAlfajor div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;    
-}
-
-.recetaBrownie {
-    border-radius: 0.5rem;
-    margin: 4rem;
-    display: flex;
-    flex-direction: row-reverse;
-    
-    
-}
-.brownieReceta{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}*/
-
-
-
-
 /* productos*/
-
+@import url("https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Lora:ital@1&family=Playfair+Display&family=Roboto+Flex:opsz,wght@8..144,200&family=Roboto+Slab:wght@300;400&display=swap");
 #hProducto {
-    font-size: 300%;
+  font-size: 300%;
 }
 
-
-
-.descriProduc{
-    grid-area: gal;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "tortas1 tortas2 tortas3 tortas4" 
-    "tortas5 tortas6 tortas7 tortas8"
-    "tortas9 tortas10 tortas11 tortas12";
+.productos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
+  -ms-grid-rows: min-content;
+      grid-template-rows: -webkit-min-content;
+      grid-template-rows: min-content;
+      grid-template-areas: "tortas1 tortas2 tortas3 tortas4"  "tortas5 tortas6 tortas7 tortas8" "tortas9 tortas10 tortas11 tortas12";
 }
 
-.tortas1{
-    grid-area: tortas1;
+.tortas1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: tortas1;
 }
-.tortas2{
-    grid-area: tortas2;
+
+.tortas2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: tortas2;
 }
-.tortas3{
-    grid-area: tortas3;
+
+.tortas3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: tortas3;
 }
-.tortas4{
-    grid-area: tortas4;
+
+.tortas4 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: tortas4;
 }
-.tortas5{
-    grid-area: tortas5;
+
+.tortas5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: tortas5;
 }
-.tortas6{
-    grid-area: tortas6;
+
+.tortas6 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: tortas6;
 }
-.tortas7{
-    grid-area: tortas7;
+
+.tortas7 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: tortas7;
 }
-.tortas8{
-    grid-area: tortas8;
+
+.tortas8 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: tortas8;
 }
-.tortas9{
-    grid-area: tortas9;
+
+.tortas9 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: tortas9;
 }
-.tortas10{
-    grid-area: tortas10;
+
+.tortas10 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: tortas10;
 }
-.tortas11{
-    grid-area: tortas11;
+
+.tortas11 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: tortas11;
 }
-.tortas12{
-    grid-area: tortas12;
+
+.tortas12 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: tortas12;
 }
 
 .tortas:hover {
-    transform: scale(1.5);
-    transition-duration: 1s;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
-
-
-
-
-.h2tortas{
-   
-    font-size: 1rem;
-    font-family: 'Roboto Slab', serif;
-    
-
+.h2tortas {
+  font-size: 1rem;
+  font-family: 'Roboto Slab', serif;
 }
 
-@media (max-width:576px) {
-  
-    .descriProduc{
-       
+@media (max-width: 576px) {
+  .productos {
+    -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr ;
-        grid-template-areas: 
-        "tortas1 " 
-        "tortas2" 
-        "tortas3" 
-        "tortas4"
-        "tortas5 "
-        "tortas6" 
-        "tortas7"
-        "tortas8"
-        "tortas9 "
-        "tortas10" 
-        "tortas11" 
-        "tortas12";
-    }
-
+    -ms-grid-rows: min-content;
+        grid-template-rows: -webkit-min-content;
+        grid-template-rows: min-content;
+        grid-template-areas: "tortas1 "  "tortas2"  "tortas3"  "tortas4" "tortas5 " "tortas6"  "tortas7" "tortas8" "tortas9 " "tortas10"  "tortas11"  "tortas12";
+  }
+  #hProducto {
+    font-size: 150%;
+  }
+  .footerprod {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
-@media (min-width:576px) and( max-width:992px){
-  
-    .descriProduc{
-       
+@media (max-width: 992px) and (min-width: 576px) {
+  .productos {
+    -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr ;
-        grid-template-areas: 
-        "tortas1 tortas2 tortas3" 
-        "tortas4 tortas5 tortas6"
-        "tortas7 tortas8 tortas9"
-        "tortas10 tortas11 tortas12" ;
-    }
+    -ms-grid-rows: min-content;
+        grid-template-rows: -webkit-min-content;
+        grid-template-rows: min-content;
+        grid-template-areas: "tortas1 tortas2 tortas3"  "tortas4 tortas5 tortas6" "tortas7 tortas8 tortas9" "tortas10 tortas11 tortas12";
+  }
+  #hProducto {
+    font-size: 200%;
+  }
+}
 
+/* recetas*/
+#receta {
+  font-size: 150%;
+}
+
+.gridRecipes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: min-content;
+      grid-template-rows: -webkit-min-content;
+      grid-template-rows: min-content;
+      grid-template-areas: "rec1" "rec2" "rec3";
+  gap: 2%;
+}
+
+.rec1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: rec1;
+}
+
+.rec2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: rec2;
+}
+
+.rec3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: rec3;
+}
+
+.animrecet:hover {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1.5s;
+          transition-duration: 1.5s;
+}
+
+@media (min-width: 768px) {
+  .gridRecipes {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: min-content;
+        grid-template-rows: -webkit-min-content;
+        grid-template-rows: min-content;
+        grid-template-areas: "rec1 rec2 " "rec3";
+  }
+  #receta {
+    font-size: 200%;
+  }
+}
+
+@media (min-width: 992px) {
+  .gridRecipes {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: min-content;
+        grid-template-rows: -webkit-min-content;
+        grid-template-rows: min-content;
+        grid-template-areas: "rec1 rec2 rec3" "rec1 rec2 rec3";
+  }
+  #receta {
+    font-size: 300%;
+  }
 }
 
 /* shop */
+.grillaShop {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: min-content;
+      grid-template-rows: -webkit-min-content;
+      grid-template-rows: min-content;
+      grid-template-areas: "shop1 " "shop2" "shop3" "shop4" "shop5" "shop6" "shop7" "shop8";
+}
 
-.grillaShop{
+.footerShop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 576px) {
+  .grillaShop {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr  ;
-    grid-template-rows: 1fr   ;
-    grid-template-areas:  
-    "galeria  "
-    "footer ";
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: min-content;
+        grid-template-rows: -webkit-min-content;
+        grid-template-rows: min-content;
+        grid-template-areas: "shop1 shop2" "shop3 shop4" "shop5 shop6" "shop7 shop8";
+  }
+  .footerShop {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    height: 100px;
+  }
 }
 
-.galeriaShop{
-    grid-area: galeria;
-}
-.footerShop{
-    grid-area: footer;
-    display: flex;
-    justify-content: center;
-}
-.padre{
+@media (min-width: 768px) {
+  .grillaShop {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: auto ;
-    grid-template-rows: auto ;
-    justify-content: center;
-    align-items: center ;
-    gap: 20px;
-}
-
-@media  (min-width:576px){
-    .grillaShop{
-        display: grid;
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows: 1fr 1fr  ;
-        grid-template-areas:  
-        "galeria galeria  "
-        "footer footer";
-    }
-    .padre{
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto ;
-        justify-content: center;
-        align-items: center ;
-        gap: 20px;
-    }
-    .footerShop{
-        justify-content: left;
-        height: 100px;
-    }
-}
-
-@media (min-width:768px){
-    .grillaShop{
-        display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr  1fr;
-        grid-template-areas:  
-        "galeria galeria galeria "
-        "footer footer footer";
-    }
-    .padre{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr ;
-        grid-template-rows: 1fr 1fr 1fr ;
-        justify-content: center;
-        align-items: center ;
-        gap: 20px;
-    }
-    .footerShop{
-        height: 100px;
-    }
+    -ms-grid-rows: min-content;
+        grid-template-rows: -webkit-min-content;
+        grid-template-rows: min-content;
+  }
+  .footerShop {
+    height: 100px;
+  }
 }
 
-@media (min-width:992px){
-    .grillaShop{
-        display: grid;
+@media (min-width: 992px) {
+  .grillaShop {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr  1fr 1fr ;
-        grid-template-areas:  
-        "galeria galeria galeria galeria"
-        "footer footer footer footer";
-    }
-    .padre{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        justify-content: center;
-        align-items: center ;
-        gap: 20px;
-    }
+    -ms-grid-rows: min-content;
+        grid-template-rows: -webkit-min-content;
+        grid-template-rows: min-content;
+  }
 }
 
+* {
+  padding: 0;
+  margin: 0;
+}
 
-/*productos*/
+/* index*/
+.contactHeader {
+  background-color: #dfd1cb;
+}
 
+h1 {
+  font-family: 'Lora', serif;
+  color: brown;
+  font-size: 100px;
+  font-weight: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 
+h2 {
+  font-family: 'Playfair Display', serif;
+  color: #754435;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 
+section h3 {
+  font-family: 'Playfair Display', serif;
+  color: brown;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 
+body {
+  background-color: #f1eff1;
+}
+
+.buscar {
+  position: relative;
+  right: 1rem;
+}
+
+footer {
+  background-color: #dfd1cb;
+  height: 200%;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #2b2222;
+  font-size: 125%;
+  font-family: 'Akshar', sans-serif;
+  margin: 4rem 2rem;
+}
+
+.navbar {
+  height: 150px;
+}
+
+.navbar1 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.videos {
+  margin: 1.5rem;
+}
+
+/*contacto*/
+.consulta {
+  font-family: 'Playfair Display', serif;
+  color: brown;
+}
+
+/*brownie*/
+.titrecetas {
+  font-size: 300%;
+  color: brown;
+}
+
+.ingreceta {
+  font-size: 15px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,116 @@
+@import "variables";
+@import "productos";
+@import "recetas";
+@import "shop";
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Lora:ital@1&family=Playfair+Display&family=Roboto+Flex:opsz,wght@8..144,200&family=Roboto+Slab:wght@300;400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* index*/
+
+.contactHeader{
+    background-color: rgb(223, 209, 203)
+
+}
+
+h1{
+    font-family: 'Lora', serif;
+    color: $colorfuente;
+    font-size: 100px;
+    font-weight: 20% ;
+    display: flex;
+    justify-content: center;
+}
+
+
+h2{
+    font-family: 'Playfair Display', serif;
+    color:#754435;
+    display: flex;
+    justify-content: center;
+}
+ 
+section h3{
+    font-family: 'Playfair Display', serif;
+    color: brown;
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    background-color: rgb(241, 239, 241);
+   
+}
+
+.buscar {
+    
+    position: relative;
+    right: 1rem;
+}
+
+footer {
+    background-color: rgb(223, 209, 203) ;
+    height: 200%;
+}
+
+nav {
+    display: flex;
+    ul{
+        display: flex;
+        li{
+            list-style-type: none;
+                    display: flex;
+                    a{ 
+
+                        text-decoration: none;
+                                    color: rgb(43, 34, 34);
+                                    font-size: 125%;
+                                    font-family: 'Akshar', sans-serif;
+                                    margin: 4rem 2rem;
+                    }
+        
+        }
+    }
+   
+
+}
+
+.navbar{
+    height: 150px;
+}
+.navbar1{
+    align-items: center;
+}
+
+.videos {
+    margin: 1.5rem;
+}
+
+
+/*contacto*/
+
+.consulta{
+    font-family: 'Playfair Display', serif;
+    color: brown;
+}
+
+/*brownie*/
+.titrecetas{
+    font-size: $subtitulos;
+    color: $colorfuente;
+} 
+.ingreceta{
+    font-size: $tamanorece;
+}
+
+
+
+
+
+

@@ -1,0 +1,65 @@
+/* shop */
+
+.grillaShop{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: min-content   ;
+    grid-template-areas:  
+    "shop1 "
+    "shop2"
+    "shop3"
+    "shop4"
+    "shop5"
+    "shop6"
+    "shop7"
+    "shop8"
+    ;
+}
+
+.footerShop{
+    display: flex;
+    justify-content: center;
+}
+
+@media  (min-width:576px){
+    .grillaShop{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: min-content;
+        grid-template-areas:
+        "shop1 shop2"
+        "shop3 shop4"
+        "shop5 shop6"
+        "shop7 shop8"
+       
+    }
+   
+    .footerShop{
+        justify-content: left;
+        height: 100px;
+    }
+}
+
+@media (min-width:768px){
+    .grillaShop{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: min-content;
+        
+    }
+    
+    .footerShop{
+        height: 100px;
+    }
+}
+
+@media (min-width:992px){
+    .grillaShop{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: min-content ;
+        
+    }
+    
+}
+

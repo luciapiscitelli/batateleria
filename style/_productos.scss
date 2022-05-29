@@ -1,0 +1,117 @@
+/* productos*/
+
+#hProducto {
+    font-size: $subtitulos;
+}
+
+
+.productos{
+   
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: min-content;
+    grid-template-areas: 
+    "tortas1 tortas2 tortas3 tortas4" 
+    "tortas5 tortas6 tortas7 tortas8"
+    "tortas9 tortas10 tortas11 tortas12"
+    ;
+}
+
+.tortas1{
+    grid-area: tortas1;
+}
+.tortas2{
+    grid-area: tortas2;
+}
+.tortas3{
+    grid-area: tortas3;
+}
+.tortas4{
+    grid-area: tortas4;
+}
+.tortas5{
+    grid-area: tortas5;
+}
+.tortas6{
+    grid-area: tortas6;
+}
+.tortas7{
+    grid-area: tortas7;
+}
+.tortas8{
+    grid-area: tortas8;
+}
+.tortas9{
+    grid-area: tortas9;
+}
+.tortas10{
+    grid-area: tortas10;
+}
+.tortas11{
+    grid-area: tortas11;
+}
+.tortas12{
+    grid-area: tortas12;
+}
+
+.tortas:hover {
+    transform: scale(1.5);
+    transition-duration: 1s;
+}
+
+.h2tortas{
+   
+    font-size: 1rem;
+    font-family: 'Roboto Slab', serif;
+    
+
+}
+
+
+@media (max-width:576px) {
+  
+    .productos{
+       
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content ;
+        grid-template-areas: 
+        "tortas1 " 
+        "tortas2" 
+        "tortas3" 
+        "tortas4"
+        "tortas5 "
+        "tortas6" 
+        "tortas7"
+        "tortas8"
+        "tortas9 "
+        "tortas10" 
+        "tortas11" 
+        "tortas12";
+    }
+    #hProducto{
+        font-size: 150%;
+    }
+    .footerprod{
+        display: flex;
+        justify-content: center;
+    
+    }
+}
+
+@media ( max-width:992px) and (min-width:576px){
+  
+    .productos{
+       
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: min-content ;
+        grid-template-areas: 
+        "tortas1 tortas2 tortas3" 
+        "tortas4 tortas5 tortas6"
+        "tortas7 tortas8 tortas9"
+        "tortas10 tortas11 tortas12" ;
+    }
+    #hProducto{
+        font-size: 200%;
+    }
+
+}
