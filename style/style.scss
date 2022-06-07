@@ -92,6 +92,23 @@ nav {
     margin: 1.5rem;
 }
 
+/*mixin*/
+@mixin sizes ($border, $height) {
+    height: $height;
+    border: $border;
+    
+}
+.videouno{
+    @include sizes (solid black, 400px)
+    
+}
+.videodos{
+    @include sizes (solid brown, 400px)
+}
+
+
+
+
 
 /*contacto*/
 
@@ -107,6 +124,24 @@ nav {
 } 
 .ingreceta{
     font-size: $tamanorece;
+}
+/*mapas*/
+$redes:(
+    instagram:#C25E,
+    facebook:#3a5795,
+);
+
+@each $red, $color in $redes {
+    .btn-#{$red}{
+        background-color: $color;
+    }
+    
+};
+.botones{
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 10px;
 }
 
 

@@ -1,6 +1,29 @@
 
 /* recetas*/
 
+/*extend*/
+
+.recipes{
+    border: 1px solid  ;
+}
+
+.animrecet-uno{
+    @extend.recipes;
+    border-color: black;
+    
+}
+.animrecet-dos{
+    @extend.recipes;
+    border-color: brown;
+}
+.animrecet-tres{
+    @extend.recipes;
+    border-color: black;
+}
+
+
+
+
 #receta{
     font-size: 150%;
 }

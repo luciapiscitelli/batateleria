@@ -136,6 +136,23 @@
 }
 
 /* recetas*/
+/*extend*/
+.recipes, .animrecet-uno, .animrecet-dos, .animrecet-tres {
+  border: 1px solid;
+}
+
+.animrecet-uno {
+  border-color: black;
+}
+
+.animrecet-dos {
+  border-color: brown;
+}
+
+.animrecet-tres {
+  border-color: black;
+}
+
 #receta {
   font-size: 150%;
 }
@@ -374,6 +391,17 @@ nav ul li a {
   margin: 1.5rem;
 }
 
+/*mixin*/
+.videouno {
+  height: 400px;
+  border: solid black;
+}
+
+.videodos {
+  height: 400px;
+  border: solid brown;
+}
+
 /*contacto*/
 .consulta {
   font-family: 'Playfair Display', serif;
@@ -388,5 +416,24 @@ nav ul li a {
 
 .ingreceta {
   font-size: 15px;
+}
+
+/*mapas*/
+.btn-instagram {
+  background-color: #C25E;
+}
+
+.btn-facebook {
+  background-color: #3a5795;
+}
+
+.botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
 }
 /*# sourceMappingURL=style.css.map */
