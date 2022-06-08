@@ -1,5 +1,17 @@
 /* shop */
 
+ul{
+    li{ display: flex;
+        justify-content: center;
+        a{
+            color: rgb(43, 34, 34);
+            text-decoration: none;
+        }
+    } 
+
+} 
+
+
 .grillaShop{
     display: grid;
     grid-template-columns: 1fr ;
@@ -15,6 +27,10 @@
     "shop8"
     ;
 }
+.col-2{
+    display: none;
+}
+
 
 .footerShop{
     display: flex;
@@ -33,6 +49,10 @@
         "shop7 shop8"
        
     }
+    .col-2{
+        display: block;
+    }
+   
    
     .footerShop{
         justify-content: left;

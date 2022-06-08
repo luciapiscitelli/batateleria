@@ -11,6 +11,7 @@
     @extend.recipes;
     border-color: black;
     
+    
 }
 .animrecet-dos{
     @extend.recipes;
@@ -50,7 +51,7 @@
     grid-area: rec3;
 }
 
-.animrecet:hover {
+.hover:hover{
     transform: scale(0.5) ;
     transition-property: all;
     transition-duration: 1.5s;
@@ -62,7 +63,7 @@
     .gridRecipes{
         
         grid-template-columns: 1fr 1fr ;
-        grid-template-rows: min-content;
+        grid-template-rows: 1fr 1fr;
         grid-template-areas: 
         "rec1 rec2 "
         "rec3";
