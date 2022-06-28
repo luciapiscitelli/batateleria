@@ -40,7 +40,7 @@ h2{
     
 }
  
-section h3{
+.exp{
     font-family: 'Playfair Display', serif;
     color: brown;
     display: flex;
@@ -96,6 +96,11 @@ nav {
 
 .carousel{
     margin: 50px 50px 50px 50px;
+}
+.map{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5%;
 }
 
 

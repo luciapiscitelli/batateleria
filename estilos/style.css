@@ -374,7 +374,7 @@ h2 {
           justify-content: center;
 }
 
-section h3 {
+.exp {
   font-family: 'Playfair Display', serif;
   color: brown;
   display: -webkit-box;
@@ -442,6 +442,16 @@ nav ul li a {
 
 .carousel {
   margin: 50px 50px 50px 50px;
+}
+
+.map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 0.5%;
 }
 
 @media (max-width: 992px) {
