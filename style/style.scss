@@ -11,18 +11,21 @@
     padding: 0;
     margin: 0;
 }
-
-/* index*/
-
+  
+body {
+    overflow-x: hidden;
+    flex-wrap: wrap;
+    background-color: rgb(241, 239, 241);
+}
+    
 .contactHeader{
-    background-color: rgb(223, 209, 203)
-
+    background-color: $colorbakc;      
 }
 
 h1{
     font-family: 'Lora', serif;
-    color: $colorfuente;
-    font-size: 80px;
+    color: brown;
+    font-size: 400%;
     font-weight: 20% ;
     display: flex;
     justify-content: center;
@@ -44,21 +47,23 @@ section h3{
     justify-content: center;
 }
 
-body{
-    background-color: rgb(241, 239, 241);
-   
-}
-
-.buscar {
-    
-    position: relative;
-    right: 1rem;
-}
-
 footer {
-    background-color: rgb(223, 209, 203) ;
-    height: 200%;
+    background-color: $colorbakc;
+    height: 200%; 
+ 
 }
+.footer-title{
+    font-size: small;
+}
+.footerh5{
+    font-size: small;
+}
+
+.subtitulos{
+    font-size: $subtitulos;  
+    color: $colorfuente;
+}
+
 
 nav {
     display: flex;
@@ -94,44 +99,32 @@ nav {
 }
 
 
-.videos {
-    margin: 1.5rem;
+@media (max-width:992px) {
+    .navbar-nav{
+        background-color: rgb(223, 209, 203);
+        font-size: larger;
+               
+        position: absolute;
+        z-index: 10;
+    }
+   
 }
-
-/*mixin*/
-@mixin sizes ($border, $height) {
-    height: $height;
-    border: $border;
-    
-}
-.videouno{
-    @include sizes (solid black, 400px)
-    
-}
-.videodos{
-    @include sizes (solid brown, 400px)
-}
-
-
-
-
-
-/*contacto*/
 
 .consulta{
     font-family: 'Playfair Display', serif;
     color: brown;
 }
 
-/*brownie*/
-.titrecetas{
-    font-size: $subtitulos;
-    color: $colorfuente;
-} 
 .ingreceta{
     font-size: $tamanorece;
+
 }
-/*mapas*/
+
+.ingredientes{
+    justify-content: left;
+}
+
+
 $redes:(
     instagram:#C25E,
     facebook:#3a5795,
@@ -146,10 +139,8 @@ $redes:(
 .botones{
     display: flex;
     justify-content: center;
-    
     margin-top: 10px;
 }
-
 
 
 

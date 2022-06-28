@@ -1,21 +1,27 @@
-/* shop */
 
-ul{
+.list-unstyled{
     li{ display: flex;
         justify-content: center;
         a{
-            color: rgb(43, 34, 34);
+            color: black;
             text-decoration: none;
         }
     } 
 
 } 
+.categorias{
+    font-size: 200%;
+   
+}
+
 
 
 .grillaShop{
+    display: none;
+
     display: grid;
     grid-template-columns: 1fr ;
-    grid-template-rows: min-content   ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:  
     "shop1 "
     "shop2"
@@ -26,60 +32,106 @@ ul{
     "shop7"
     "shop8"
     ;
-}
-.col-2{
-    display: none;
+    .shop1, .shop2, .shop3, .shop4, .shop5, .shop6, .shop7, .shop8{
+        display: flex;
+        justify-content: center;
+
+    } 
+    
+    gap: 1%;
+    
 }
 
 
-.footerShop{
-    display: flex;
-    justify-content: center;
-}
+
+
 
 @media  (min-width:576px){
     .grillaShop{
+        display: block;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: min-content;
+        grid-template-rows: 1fr 1fr ;
         grid-template-areas:
         "shop1 shop2"
         "shop3 shop4"
         "shop5 shop6"
-        "shop7 shop8"
+        "shop7 shop8";
        
     }
     .col-2{
-        display: block;
+        display: none;
     }
    
    
-    .footerShop{
-        justify-content: left;
-        height: 100px;
-    }
+   
 }
 
 @media (min-width:768px){
     .grillaShop{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: min-content;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "shop1 shop2"
+        "shop3 shop4"
+        "shop5 shop6"
+        "shop7 shop8";
         
     }
     
-    .footerShop{
-        height: 100px;
+    .cat{
+        font-size: medium;
     }
+    .col-2{
+        display: block;
+    }
+    
+    
 }
 
 @media (min-width:992px){
     .grillaShop{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: min-content ;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1.1fr ;
+        grid-template-areas: 
+        "shop1 shop2 shop3"
+        "shop4 shop5 shop6"
+        "shop7 shop8 shop9";
+        margin-bottom: 0.5%;
         
     }
+    .cat{
+        font-size: medium;
+    }
     
+    
+}
+
+@media (min-width:1240px){
+    .grillaShop{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1.1fr ;
+        grid-template-areas: 
+        "shop1 shop2 shop3 shop4 "
+        "shop5 shop6 shop7 shop8 ";  
+    }
+    .cat{
+        font-size: large;
+    }
+
+}
+
+.boxes{
+    margin-left: 0.5%;
+}
+
+.box3{
+    font-family: 'Lora', serif;
+    font-size: 100%;
+    display: flex;
+    justify-content: center;
 }
 

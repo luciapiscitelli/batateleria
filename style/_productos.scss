@@ -1,9 +1,3 @@
-/* productos*/
-
-#hProducto {
-    font-size: $subtitulos;
-}
-
 
 .productos{
    
@@ -16,6 +10,10 @@
     "tortas9 tortas10 tortas11 tortas12"
     ;
     margin-left: 1%;
+}
+.tortas, .shop{
+    border-radius:70px;
+    box-shadow: 3px 3px 5px #999;
 }
 
 .tortas1{
@@ -68,11 +66,7 @@
 
 
 
-
-
-
-
-@media (max-width:576px) {
+@media (max-width:600px) {
   
     .productos{
        
@@ -92,18 +86,24 @@
         "tortas11" 
         "tortas12";
     }
-    #hProducto{
-        font-size: 150%;
-    }
-    .footerprod{
-        display: flex;
-        justify-content: center;
-    
-    }
     
 }
 
-@media ( max-width:992px) and (min-width:576px){
+@media (max-width:880px)and (min-width:600px){
+    .productos{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:min-content ;
+        grid-template-areas: 
+        "tortas1 tortas2"
+        "tortas3 tortas4"
+        "tortas5 tortas6"
+        "tortas7 tortas8"
+        "tortas9 tortas10"
+        "tortas11 tortas12";
+    }
+}
+
+@media ( max-width:992px) and (min-width:880px){
   
     .productos{
        
@@ -115,8 +115,6 @@
         "tortas7 tortas8 tortas9"
         "tortas10 tortas11 tortas12" ;
     }
-    #hProducto{
-        font-size: 200%;
-    }
+   
 
 }
