@@ -2,7 +2,7 @@
 
 
 
-
+/*
     let producto= prompt("Ingrese el producto a comprar");
     let precio_producto= parseInt (prompt("Ingrese el precio del producto")) ; 
     let cantidad= parseInt (prompt("Ingrese cantidad que desea comprar")); 
@@ -83,22 +83,16 @@ function total_compra ( acu , producto ){
 }
 
 let venta_total = ventas.reduce( total_compra , 0 );
-console.log("El total de las vetas es de: ", venta_total);
+console.log("El total de las vetas es de: ", venta_total);*/
 
 
 
+function agregar_producto() {
 
-class Producto {
-    constructor(){
-
-
-    }
-
+        let producto= document.getElementById ("producto");
+        let cantidad = document.getElementById ("cantidad");
+            console.log (`Elegiste` , cantidad.value, producto.value );
+        
+       
 }
 
-class Venta {
-    constructor(){
-
-
-    }
-}

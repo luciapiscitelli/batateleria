@@ -63,13 +63,26 @@
               </div>
           </div>
         </div>
+        <div id="contenedor">
+        <label for="producto">Escribir productos seleccionados</label>
+          <input type="text" id="producto">
+          <br>
+          <label for="cantidad">Escribir cantidad de productos seleccionados</label>
+          <input type="text" id="cantidad">
+          <br>
+        <button onclick="agregar_producto()">Agregar al carrito</button>
       
-        <div class="col-0     grillaShop">
-
+          <ul id="lista">
+              
+          </ul>
+        </div>
+        <div class="col-0  grillaShop javascrip">
+          
         
         
-            <div class="shop1">
-                <img class="shop" src="../img/alfajor.jpg" alt="" width="250px">
+            <div class="shop1" id="alfajor">
+                <button onclick=""> <img class="shop" src="../img/alfajor.jpg" alt="" width="250px"></button>
+                
             </div>
             <div class="shop2">
                 <img class="shop" src="../img/frutillas.jpg" alt="" width="250px">
