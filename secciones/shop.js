@@ -1,5 +1,55 @@
 
+let boton = document.getElementById("btn");
 
+
+boton.addEventListener("click" , function(){
+
+
+    let producto = document.getElementById("producto");
+    let cantidad = document.getElementById ("cantidad");
+    let lista = document.getElementById("lista");
+
+
+    let li = document.createElement("li");
+
+    li.innerHTML = `<span>${cantidad.value}</span>
+                    <span>${producto.value}</span>
+                    <button class="borrar">X</button>`;
+
+    lista.append(li);
+
+
+    let borrar = document.querySelectorAll(".borrar");
+
+
+
+    for( let boton of borrar){
+
+        boton.addEventListener("click" , borrar_elemento);
+
+    }
+
+
+});
+
+
+function borrar_elemento(e){
+    
+    let hijo = e.target;
+    let padre = hijo.parentNode;
+    let abuelo = padre.parentNode;
+
+    console.log(hijo);
+    console.log(padre);
+    console.log(abuelo);
+
+
+    padre.remove();
+
+
+
+    
+   }
 
 
 /*
@@ -87,12 +137,4 @@ console.log("El total de las vetas es de: ", venta_total);*/
 
 
 
-function agregar_producto() {
-
-        let producto= document.getElementById ("producto");
-        let cantidad = document.getElementById ("cantidad");
-            console.log (`Elegiste` , cantidad.value, producto.value );
-        
-       
-}
 
