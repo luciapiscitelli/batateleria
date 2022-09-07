@@ -1,5 +1,28 @@
+//array de objetos
 
-let boton = document.getElementById("btn");
+let usuarios = [
+    {nombre:"Lucia" , apellido:"Piscitelli" , edad:18},
+    {nombre:"Juan" , apellido:"Lopez" , edad:40},
+    {nombre:"Matias" , apellido:"Gonzalez" , edad:15},
+    {nombre:"Alejandro" , apellido:"Gimenes" , edad:42},
+    {nombre:"Mirian" , apellido:"Alvarez" , edad:16},
+    {nombre:"Belen" , apellido:"Cesale" , edad:10},
+    {nombre:"Lucas" , apellido:"Pare" , edad:28},
+    {nombre:"Santiago" , apellido:"Lajud" , edad:23}
+];
+
+//CONCAT
+
+let nueva_lista = [{nombre:"Juan Cruz" , apellido:"Lajud" , edad:18}];
+
+let resultado_concat = usuarios.concat(nueva_lista);
+console.log("LISTA CONCATENADA: ", resultado_concat);
+
+
+
+
+
+/*let boton = document.getElementById("btn");
 
 
 boton.addEventListener("click" , function(){
@@ -49,7 +72,7 @@ function borrar_elemento(e){
 
 
     
-   }
+   }*/
 
 
 /*
