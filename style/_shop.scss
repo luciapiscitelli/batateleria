@@ -138,3 +138,38 @@
     justify-content: center;
 }
 
+.nombreProducto{
+    color: $colorfuente;
+    font-family: 'Lora', serif;
+    font-size: 150%;
+}
+
+.botonCompra{
+    background-color: $colorfuente;
+    border-color: $colorfuente;
+}
+
+#contenedorPadre{
+
+    display:flex;
+}
+
+#listaProductos{
+
+    width: 250%;
+}
+#carrito{
+    
+    background-color: $colorbakc; 
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+img{
+    height: 100%;
+}
+
+  td{
+    height: 100px;
+  }
+

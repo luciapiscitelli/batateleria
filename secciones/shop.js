@@ -77,12 +77,13 @@ btn_carrito.addEventListener("click" , function(){
 
     let carrito = document.getElementById("carrito");
 
-    if(carrito.style.display != "none"){
+    carrito.style.display != "none" ? carrito.style.display = "none" : carrito.style.display = "flex";
+   /* if(carrito.style.display != "none"){
         carrito.style.display = "none";
     }
     else{
         carrito.style.display = "flex";   
-     }
+     }*/
 
 
 })
