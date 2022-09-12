@@ -1,4 +1,97 @@
-//array de objetos
+
+let btnCompra = document.querySelectorAll(".botonCompra");
+for( let boton of btnCompra){
+
+    boton.addEventListener("click" , agregar_carrito);
+}
+
+let carrito = [];
+
+function agregar_carrito(e){
+    console.log("EL EVENTO ESTA EN:" , e.target);
+
+    let hijo = e.target;
+    let padre = hijo.parentNode;
+    let abuelo = padre.parentNode;
+    
+    let nombre_producto = padre.querySelector(".nombreProducto").textContent;
+    
+    let precio = padre.querySelector("span").textContent;
+    
+    let img = abuelo.querySelector("img").src;
+    
+    let producto = {
+        nombre:nombre_producto,
+        img:img,
+        precio: precio,
+        cantidad:1
+    };
+
+
+    carrito.push(producto);
+    
+
+    let arreglo_JSON = JSON.stringify(carrito);
+    localStorage.setItem("carrito" , arreglo_JSON);
+
+    console.log( carrito);
+    
+    mostrar_carrito( producto );
+}
+
+function mostrar_carrito( producto){
+
+    let fila = document.createElement("tr");
+
+     fila.innerHTML = `<td><img src="${producto.img}"></td>
+                       <td>${producto.nombre }</td>
+                       <td>${producto.cantidad}</td>
+                       <td>${producto.precio}</td>
+                       <td><button class="btn-danger borrar_elemento">Borrar</button></td>`;
+
+    let tabla = document.getElementById("tbody");
+    tabla.append(fila);
+
+
+    let botones_borrar = document.querySelectorAll(".borrar_elemento");
+
+    for( let boton of botones_borrar){
+
+        boton.addEventListener("click" , borrar_producto);
+    }
+
+}
+
+
+
+
+function borrar_producto(e){
+
+    let abuelo = e.target.parentNode.parentNode;
+    abuelo.remove();
+}
+
+let btn_carrito = document.getElementById("mostrar_carrito");
+
+btn_carrito.addEventListener("click" , function(){
+
+    let carrito = document.getElementById("carrito");
+
+    if(carrito.style.display != "none"){
+        carrito.style.display = "none";
+    }
+    else{
+        carrito.style.display = "flex";   
+     }
+
+
+})
+
+
+
+
+
+/*//array de objetos
 
 let usuarios = [
     {nombre:"Lucia" , apellido:"Piscitelli" , edad:18},
@@ -16,63 +109,10 @@ let usuarios = [
 let nueva_lista = [{nombre:"Juan Cruz" , apellido:"Lajud" , edad:18}];
 
 let resultado_concat = usuarios.concat(nueva_lista);
-console.log("LISTA CONCATENADA: ", resultado_concat);
+console.log("LISTA CONCATENADA: ", resultado_concat);*/
 
 
 
-
-
-/*let boton = document.getElementById("btn");
-
-
-boton.addEventListener("click" , function(){
-
-
-    let producto = document.getElementById("producto");
-    let cantidad = document.getElementById ("cantidad");
-    let lista = document.getElementById("lista");
-
-
-    let li = document.createElement("li");
-
-    li.innerHTML = `<span>${cantidad.value}</span>
-                    <span>${producto.value}</span>
-                    <button class="borrar">X</button>`;
-
-    lista.append(li);
-
-
-    let borrar = document.querySelectorAll(".borrar");
-
-
-
-    for( let boton of borrar){
-
-        boton.addEventListener("click" , borrar_elemento);
-
-    }
-
-
-});
-
-
-function borrar_elemento(e){
-    
-    let hijo = e.target;
-    let padre = hijo.parentNode;
-    let abuelo = padre.parentNode;
-
-    console.log(hijo);
-    console.log(padre);
-    console.log(abuelo);
-
-
-    padre.remove();
-
-
-
-    
-   }*/
 
 
 /*

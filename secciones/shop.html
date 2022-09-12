@@ -47,8 +47,12 @@
       </div>
     </div>
   </nav>
-      <h1 class="subtitulos"> Shop Online</h1>
-      <div class="row over">
+  <button id="mostrar_carrito">Carrito</button>
+    <h1 class="subtitulos"> Shop Online</h1>
+    <div id="contenedorPadre">
+      <div class="container" id="listaProductos"></div>
+
+      <div class="row ">
 
         
         <div class="col-12    span2 visible-when-content-ready">
@@ -63,57 +67,118 @@
               </div>
           </div>
         </div>
-        <div id="contenedor">
-        <label for="producto">Escribir productos seleccionados</label>
-          <input type="text" id="producto">
-          <br>
-          <label for="cantidad">Escribir cantidad de productos seleccionados</label>
-          <input type="text" id="cantidad">
-          <br>
-        <button id="btn" >Agregar al carrito</button>
-      
-          <ul id="lista">
-              
-          </ul>
-        </div>
-        <div class="col-0  grillaShop javascrip">
+      </div> 
+      <div class="row ">
+    
+            <div class="col  shop1" id="alfajor">
+              <div class="card" style="width: 90%;">
+                <img class="shop" src="../img/alfajor.jpg" alt="" width="200px">
+                <div class="card-body">
+                  <h3 class="card-title nombreProducto">Alfajores Docena</h5>
+                  <span class="precio">$1500</span>  
+                  <a href="#" class="btn btn-primary botonCompra">Comprar</a>
+                </div>
+              </div>  
+            </div>
+            <div class="col shop2">
+              <div class="card" style="width: 90%;">
+                <img class="shop" src="../img/frutillas.jpg" alt="" width="200px">
+                <div class="card-body">
+                  <h3 class="card-title nombreProducto">Tarta de Frutillas</h5>
+                  <span class="precio">$2000</span>  
+                  <a href="#" class="btn btn-primary botonCompra">Comprar</a>
+                </div>
+              </div>  
+            </div>
+            <div class="col shop3">
+              <div class="card" style="width: 90%;">
+                <img class="shop" src="../img/rogel.jpg" alt="" width="200px">
+                <div class="card-body">
+                  <h3 class="card-title nombreProducto">Rogel</h5>
+                  <span class="precio">$4000</span>  
+                  <a href="#" class="btn btn-primary botonCompra">Comprar</a>
+                </div>
+              </div>  
+            </div>
+            <div class="col shop4">
+              <div class="card" style="width: 90%;">
+                <img class="shop" src="../img/cheesecake.jpg" alt="" width="200px">
+                <div class="card-body">
+                  <h3 class="card-title nombreProducto">cheesecake de Frutos Rojos</h5>
+                  <span class="precio">$4500</span>  
+                  <a href="#" class="btn btn-primary botonCompra">Comprar</a>
+                </div>
+              </div>  
+            </div>
+          </div>  
+          <div class="row ">
+            <div class="col shop5">
+              <div class="card" style="width: 90%;">
+                <img class="shop" src="../img/carrot.jpg" alt="" width="200px">
+                <div class="card-body">
+                  <h3 class="card-title nombreProducto">Carrot Cake</h5>
+                  <span class="precio">$4200</span>  
+                  <a href="#" class="btn btn-primary botonCompra">Comprar</a>
+                </div>
+              </div>  
+            </div>
+            <div class="col shop6">
+              <div class="card" style="width: 90%;">
+                <img class="shop" src="../img/almendra.jpg" alt="" width="200px">
+                <div class="card-body">
+                  <h3 class="card-title nombreProducto">Sablee de Almendras</h5>
+                  <span class="precio">$3500</span>  
+                  <a href="#" class="btn btn-primary botonCompra">Comprar</a>
+                </div>
+              </div>  
+            </div>
+            <div class="col shop7">
+              <div class="card" style="width: 90%;">
+                <img class="shop" src="../img/bizcofruti.jpg" alt="" width="200px">
+                <div class="card-body">
+                 <h3 class="card-title nombreProducto">Bizcochuelo de Vainilla con Frutillas</h5>
+                  <span class="precio">$3400</span>  
+                  <a href="#" class="btn btn-primary botonCompra">Comprar</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col shop8">
+              <div class="card" style="width: 90%;">
+                <img class="shop" src="../img/bizconute.jpg" alt=""width="200px">
+                <div class="card-body">
+                  <h3 class="card-title nombreProducto">Bizcochuelo con Nutella</h5>
+                  <span class="precio">$5500</span>  
+                  <a href="#" class="btn btn-primary botonCompra">Comprar</a>
+                </div>
+              </div>  
+            </div>
+          </div>
+       
+
+
+
+       
+
+         
+      </div> 
+      <div class="container" id="carrito">
+        <h2>Carrito</h2>
+        <table class="table table-dark">
+          <thead>
+            <tr>             
+              <td>Producto</td>
+              <td>Cantidad</td>
+              <td>Precio</td>
+            </tr>
+          </thead>
+          <tbody id="tbody">
           
-        
-        
-            <div class="shop1" id="alfajor">
-                <button onclick=""> <img class="shop" src="../img/alfajor.jpg" alt="" width="250px"></button>
-                
-            </div>
-            <div class="shop2">
-                <img class="shop" src="../img/frutillas.jpg" alt="" width="250px">
-            </div>
-            <div class="shop3">
-                <img class="shop" src="../img/rogel.jpg" alt="" width="250px">
-            </div>
-            <div class="shop4">
-                <img class="shop" src="../img/cheesecake.jpg" alt="" width="250px">
-            </div>
-            <div class="shop5">
-                <img class="shop" src="../img/carrot.jpg" alt="" width="250px">
-            </div>
-            <div class="shop6">
-                <img class="shop" src="../img/almendra.jpg" alt="" width="250px">
-            </div>
-            <div class="shop7">
-              <img class="shop" src="../img/bizcofruti.jpg" alt="" width="250px">
-            </div>
-            <div class="shop8">
-              <img class="shop" src="../img/bizconute.jpg" alt=""width="250px">
-            </div>
+          </tbody>
+        </table>
 
-       
-
-
-
-       
-
-        </div> 
-    </div> 
+      </div>
+    </div>
     <footer>
       <div class="row footer2">
         <div class="col-4">
