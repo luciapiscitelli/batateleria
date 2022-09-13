@@ -88,8 +88,33 @@ btn_carrito.addEventListener("click" , function(){
 
 })
 
+Swal.fire({
+
+    title: "Bienvenido al Shop",
+    showClass: {
+        popup: 'animate__animated animate__bounceInUp'
+      },
+      hideClass: {
+        popup: 'animate__animated animate__hinge'
+      }
+    
+}
+
+) ;
+/*
+Toastify({
+
+    text: "Instagram",
+    
+    duration: 10000,
+    destination: 
+
+    
+    }).showToast();
 
 
+
+*/
 
 
 /*//array de objetos
