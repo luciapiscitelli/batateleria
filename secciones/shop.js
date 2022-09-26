@@ -101,6 +101,18 @@ Swal.fire({
 }
 
 ) ;
+
+let clima =document.getElementById("clima");
+let ciudad= "Buenos Aires"
+
+
+fetch ("https://api.openweathermap.org/data/2.5/weather?q=" + ciudad + "&appid=aa3bba92f69300fdc2d75e043aba9c5a")
+    .then ( response => response.json())
+    .then (data => {
+        clima.innerHTML = `<span> Ciudad: ${data.name} </span>
+                            <span>Temperatura: ${data.main.temp}</span>` 
+    })
+
 /*
 Toastify({
 
