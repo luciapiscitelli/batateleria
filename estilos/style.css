@@ -320,6 +320,11 @@ td {
   height: 100px;
 }
 
+.fot {
+  width: 10%;
+  height: 30%;
+}
+
 * {
   padding: 0;
   margin: 0;

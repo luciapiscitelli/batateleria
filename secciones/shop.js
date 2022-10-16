@@ -52,6 +52,9 @@ function mostrar_carrito( producto){
     let tabla = document.getElementById("tbody");
     tabla.append(fila);
 
+    let total= document.getElementById("total");
+    
+
 
     let botones_borrar = document.querySelectorAll(".borrar_elemento");
 
@@ -77,7 +80,7 @@ btn_carrito.addEventListener("click" , function(){
 
     let carrito = document.getElementById("carrito");
 
-    carrito.style.display != "none" ? carrito.style.display = "none" : carrito.style.display = "flex";
+    carrito.style.display != "none" ? carrito.style.display =  "none" : carrito.style.display = "flex";
    /* if(carrito.style.display != "none"){
         carrito.style.display = "none";
     }
@@ -87,7 +90,7 @@ btn_carrito.addEventListener("click" , function(){
 
 
 })
-
+/*
 Swal.fire({
 
     title: "Bienvenido al Shop",
@@ -100,7 +103,7 @@ Swal.fire({
     
 }
 
-) ;
+) ;*/
 
 let clima =document.getElementById("clima");
 let ciudad= "Buenos Aires"
@@ -112,6 +115,9 @@ fetch ("https://api.openweathermap.org/data/2.5/weather?q=" + ciudad + "&appid=a
         clima.innerHTML = `<span> Ciudad: ${data.name} </span>
                             <span>Temperatura: ${data.main.temp}</span>` 
     })
+
+
+
 
 /*
 Toastify({
